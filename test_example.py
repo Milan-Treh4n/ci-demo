@@ -1,11 +1,6 @@
 import unittest
 from Milan_function import milan_function
 
-class TestMilan_Function(unittest.TestCase):
-    def test_add(self):
-        self.assertEqual(milan_function(6, 7), 13)
-        self.assertEqual(milan_function(3.5, 2.5), 6.0)
-        
-
-if __name__ == '__main__':
-    unittest.main()
+def test_milan_function():
+    assert milan_function(2, 3) == 5
+    assert milan_function(-1, 1) == 0
